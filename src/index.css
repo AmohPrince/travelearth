@@ -1,0 +1,23 @@
+:root {
+  --black: #000000;
+  --brown: #b25a59;
+  --yellow: #f0c53e;
+  --blacklike: #2c2d32;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.p__nunito {
+  font-family: "Nunito Sans", sans-serif;
+}
+.p__poppins {
+  font-family: "Poppins", sans-serif;
+}
+.flex__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

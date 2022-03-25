@@ -5,53 +5,7 @@ import Logo from "../Logo/Logo";
 import "./Topbar.css";
 import assets from "../../assets/assets";
 
-const yellow = {
-  background: "#f0c53e",
-  primarytextcolour: "#000",
-  secondarytextcolour: "7f2736",
-  logoTextColour: "#ffffff",
-  logoBackground: "#000000",
-  linksColor: "#252641",
-  tabBackground: "#B25A59",
-  lifeJourney: "#7F2736",
-  phoneNumber: "+1 (000) 000 000",
-  notPhoneNumber: "Explore Destinations",
-  phoneIcon: false,
-  text: "Join Now",
-};
-
-const dark = {
-  background: "#2c2d32",
-  primarytextcolour: "#ffffff",
-  secondarytextcolour: "#f0c53e",
-  logoTextColour: "#000000",
-  logoBackground: "#F0C53E",
-  linksColor: "#ffffff",
-  tabBackground: "#B25A59",
-  lifeJourney: "#F0C53E",
-  phoneNumber: "+1 (000) 000 000",
-  notPhoneNumber: "Explore Destinations",
-  phoneIcon: false,
-  text: "Join Now",
-};
-const brown = {
-  background: "#b25a59",
-  primarytextcolour: "#ffffff",
-  secondarytextcolour: "#f0c53e",
-  logoTextColour: "#000000",
-  logoBackground: "#F0C53E",
-  linksColor: "#ffffff",
-  tabBackground: "#000",
-  lifeJourney: "#F0C53E",
-  phoneNumber: "+1 (000) 000 000",
-  notPhoneNumber: "Explore Destinations",
-  phoneIcon: false,
-  text: "Join Now",
-};
-
-const Topbar = () => {
-  const [theme, setTheme] = useState(yellow);
-
+const Topbar = ({ theme }) => {
   return (
     <>
       <div
@@ -75,7 +29,7 @@ const Topbar = () => {
         </div>
         <div className="App__topbar-body flex__container">
           <div className="Topbar__body-right">
-            <div className="p__nunito">
+            <div className="p__nunito ">
               <p>
                 <span style={{ color: theme.lifeJourney }}>
                   Life is a journey

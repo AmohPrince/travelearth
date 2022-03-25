@@ -2,6 +2,7 @@
   border-radius: 80px;
   height: 60px;
   width: 100%;
+  cursor: pointer;
 }
 .Colouredtab__container > p {
   color: white;

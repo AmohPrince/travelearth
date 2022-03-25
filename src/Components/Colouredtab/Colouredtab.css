@@ -6,3 +6,16 @@
 .Colouredtab__container > p {
   color: white;
 }
+
+@media screen and (max-width: 1150px) {
+  .Colouredtab__container {
+    border-radius: 70px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .Colouredtab__container {
+    border-radius: 60px;
+    height: 40px;
+  }
+}

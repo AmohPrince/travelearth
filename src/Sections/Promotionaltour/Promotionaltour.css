@@ -1,11 +1,6 @@
 .Promotionaltour__container {
   padding: 5%;
 }
-.p__heading > p {
-  font-size: 2.1rem;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
-}
 .Promotionaltour__text {
   max-width: 65ch;
   font-weight: 400;

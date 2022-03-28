@@ -2,6 +2,7 @@ import React from "react";
 import Locations from "../../Components/Locations/Locations";
 import "./Promotionaltour.css";
 import images from "../../assets/assets";
+import Subtitle from "../../Components/Subtitle/Subtitle";
 
 const Place = [
   {
@@ -18,18 +19,16 @@ const Place = [
   },
 ];
 
+const textGroup = {
+  text1: "Check Our Best",
+  text2: "PromotionalTour",
+};
+
 const Promotionaltour = ({ theme }) => {
   return (
     <div>
       <div className="Promotionaltour__container flex__container-v">
-        <div className="Promotionaltour__heading">
-          <div className="p__heading">
-            <p>
-              <span style={{ color: theme.lifeJourney }}>Check Our Best</span>{" "}
-              Promotional Tour
-            </p>
-          </div>
-        </div>
+        <Subtitle theme={theme} textGroup={textGroup} />
         <div className="Promotionaltour__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
           repudiandae reiciendis. Reiciendis eligendi voluptate ipsam molestias

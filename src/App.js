@@ -1,7 +1,8 @@
 import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import Topbar from "./Components/Topbar/Topbar";
 import Promotionaltour from "./Sections/Promotionaltour/Promotionaltour";
+import Globallyaccepted from "./Sections/Globallyaccepted/Globallyaccepted";
 
 const yellow = {
   background: "#f0c53e",
@@ -16,6 +17,7 @@ const yellow = {
   notPhoneNumber: "Explore Destinations",
   phoneIcon: false,
   text: "Join Now",
+  tripsColor: " #7F2736",
 };
 
 const dark = {
@@ -31,6 +33,7 @@ const dark = {
   notPhoneNumber: "Explore Destinations",
   phoneIcon: false,
   text: "Join Now",
+  tripsColor: " #7F2736",
 };
 const brown = {
   background: "#b25a59",
@@ -45,14 +48,20 @@ const brown = {
   notPhoneNumber: "Explore Destinations",
   phoneIcon: false,
   text: "Join Now",
+  tripsColor: "#F0C53E",
 };
 
+export const themeContext = React.createContext();
 function App() {
   const [theme, setTheme] = useState(yellow);
+
   return (
     <div className="App">
-      <Topbar theme={theme} />
-      <Promotionaltour theme={theme} />
+      <themeContext.Provider value={theme}>
+        <Topbar theme={theme} />
+        <Promotionaltour theme={theme} />
+        <Globallyaccepted theme={theme} />
+      </themeContext.Provider>
     </div>
   );
 }

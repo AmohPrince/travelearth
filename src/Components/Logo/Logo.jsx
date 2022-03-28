@@ -8,8 +8,6 @@ const Logo = ({ theme }) => {
       path.setAttribute("fill", theme.logoBackground);
     });
     text.setAttribute("fill", theme.logoTextColour);
-
-    console.log("colour on install ", theme.background);
   }, []);
 
   return (

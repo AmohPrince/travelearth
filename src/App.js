@@ -4,6 +4,7 @@ import Topbar from "./Components/Topbar/Topbar";
 import Promotionaltour from "./Sections/Promotionaltour/Promotionaltour";
 import Globallyaccepted from "./Sections/Globallyaccepted/Globallyaccepted";
 import Watchtour from "./Sections/Watchtour/Watchtour";
+import Ourteam from "./Sections/Ourteam/Ourteam";
 
 const yellow = {
   background: "#f0c53e",
@@ -63,6 +64,7 @@ function App() {
         <Promotionaltour theme={theme} />
         <Globallyaccepted theme={theme} />
         <Watchtour theme={theme} />
+        <Ourteam theme={theme} />
       </themeContext.Provider>
     </div>
   );

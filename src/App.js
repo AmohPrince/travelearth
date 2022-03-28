@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Topbar from "./Components/Topbar/Topbar";
 import Promotionaltour from "./Sections/Promotionaltour/Promotionaltour";
 import Globallyaccepted from "./Sections/Globallyaccepted/Globallyaccepted";
+import Watchtour from "./Sections/Watchtour/Watchtour";
 
 const yellow = {
   background: "#f0c53e",
@@ -61,6 +62,7 @@ function App() {
         <Topbar theme={theme} />
         <Promotionaltour theme={theme} />
         <Globallyaccepted theme={theme} />
+        <Watchtour theme={theme} />
       </themeContext.Provider>
     </div>
   );

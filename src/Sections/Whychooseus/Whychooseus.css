@@ -1,0 +1,29 @@
+.Whychooseus__container {
+  padding: 5%;
+}
+.Whychooseus__container > :nth-child(2) {
+  width: 54ch;
+  text-align: center;
+  color: #2c2d32;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1%;
+}
+.Whychooseus__reasons {
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 1150px) {
+  .Whychooseus__container > :nth-child(2) {
+    width: 40ch;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Whychooseus__reasons {
+    flex-direction: column;
+  }
+}

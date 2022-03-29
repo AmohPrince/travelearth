@@ -8,8 +8,14 @@ import flying from "./zipline.mp4";
 import people from "./Bunchofpeople.png";
 import icon1 from "./Icon1.svg";
 import icon2 from "./Icon2.svg";
+import Staricon from "./Staricon.svg";
+import Worldicon from "./Worldicon.svg";
+import Like from "./Likeicon.svg";
 
 export default {
+  Like,
+  Worldicon,
+  Staricon,
   icon1,
   icon2,
   people,

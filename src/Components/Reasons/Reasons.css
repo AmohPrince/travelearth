@@ -4,6 +4,7 @@
   box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
   border-radius: 20px;
   padding: 3%;
+  min-width: 300px;
 }
 .Reasons__container > :first-child {
   position: absolute;

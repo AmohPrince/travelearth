@@ -6,6 +6,7 @@ import Globallyaccepted from "./Sections/Globallyaccepted/Globallyaccepted";
 import Watchtour from "./Sections/Watchtour/Watchtour";
 import Ourteam from "./Sections/Ourteam/Ourteam";
 import Whychooseus from "./Sections/Whychooseus/Whychooseus";
+import Customersay from "./Sections/Customerssay/Customersay";
 
 const yellow = {
   background: "#f0c53e",
@@ -67,6 +68,7 @@ function App() {
         <Watchtour theme={theme} />
         <Ourteam theme={theme} />
         <Whychooseus />
+        <Customersay />
       </themeContext.Provider>
     </div>
   );

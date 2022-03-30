@@ -65,7 +65,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1150px) {
   .Ourteam__body {
     flex-direction: column;
   }
@@ -77,6 +77,9 @@
     width: 100%;
     margin-top: 50px;
   }
+}
+
+@media screen and (max-width: 650px) {
   .Ourteam__body-left > :first-child {
     text-align: center;
   }

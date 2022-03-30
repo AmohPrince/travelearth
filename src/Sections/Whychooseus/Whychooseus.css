@@ -1,8 +1,9 @@
 .Whychooseus__container {
+  width: 100%;
   padding: 5%;
 }
 .Whychooseus__container > :nth-child(2) {
-  width: 54ch;
+  max-width: 54ch;
   text-align: center;
   color: #2c2d32;
   line-height: 2.5rem;
@@ -14,12 +15,10 @@
   width: 90%;
   justify-content: space-between;
   margin-top: 5%;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1150px) {
-  .Whychooseus__container > :nth-child(2) {
-    width: 40ch;
-  }
 }
 
 @media screen and (max-width: 650px) {

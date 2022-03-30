@@ -1,6 +1,7 @@
 .App__topbar {
   padding: 2%;
   padding-bottom: unset;
+  width: 100%;
 }
 .App__navbar {
   justify-content: space-between;

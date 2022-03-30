@@ -11,8 +11,16 @@ import icon2 from "./Icon2.svg";
 import Staricon from "./Staricon.svg";
 import Worldicon from "./Worldicon.svg";
 import Like from "./Likeicon.svg";
+import PinkArrow from "./Pinkarrow.svg";
+import Stars from "./Stars.svg";
+import SmilingWoman from "./Smilingwoman.png";
+import Switch from "./Imageswitch.svg";
 
 export default {
+  Switch,
+  Stars,
+  SmilingWoman,
+  PinkArrow,
   Like,
   Worldicon,
   Staricon,

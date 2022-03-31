@@ -11,7 +11,9 @@ const Watchtour = ({ theme }) => {
   return (
     <div className="Watchtour__container flex__container">
       <div className="Watchtour__left flex__container-v">
-        <Subtitle theme={theme} textGroup={textGroup} />
+        <div className="Sub__container-Head">
+          <Subtitle theme={theme} textGroup={textGroup} />
+        </div>
         <div className="circle-topright">
           <svg
             width="73"

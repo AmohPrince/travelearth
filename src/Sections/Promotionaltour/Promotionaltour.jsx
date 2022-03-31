@@ -28,7 +28,9 @@ const Promotionaltour = ({ theme }) => {
   return (
     <div>
       <div className="Promotionaltour__container flex__container-v">
-        <Subtitle theme={theme} textGroup={textGroup} />
+        <div className="Sub__container-Head">
+          <Subtitle theme={theme} textGroup={textGroup} />
+        </div>
         <div className="Promotionaltour__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
           repudiandae reiciendis. Reiciendis eligendi voluptate ipsam molestias

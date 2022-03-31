@@ -37,7 +37,9 @@ const Ourteam = ({ theme }) => {
   return (
     <div className="Ourteam__container flex__container-v">
       <div className="Ourteam__header">
-        <Subtitle theme={theme} textGroup={textGroup} />
+        <div className="Sub__container-Head">
+          <Subtitle theme={theme} textGroup={textGroup} />
+        </div>
         <p className="p__poppins">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid,
           tempora!
@@ -102,7 +104,9 @@ const Ourteam = ({ theme }) => {
         </div>
         <div className="Ourteam__body-left">
           {/* <p className="p__poppins">Our</p> */}
-          <Subtitle theme={theme} textGroup={textGroup2} />
+          <div className="Sub__container-mid">
+            <Subtitle theme={theme} textGroup={textGroup2} />
+          </div>
           <Teamsection icon={icons.icon1} />
           <Teamsection icon={icons.icon2} />
         </div>

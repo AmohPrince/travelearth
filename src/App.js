@@ -7,6 +7,7 @@ import Watchtour from "./Sections/Watchtour/Watchtour";
 import Ourteam from "./Sections/Ourteam/Ourteam";
 import Whychooseus from "./Sections/Whychooseus/Whychooseus";
 import Customersay from "./Sections/Customerssay/Customersay";
+import Latestnews from "./Sections/Latestnews/Latestnews";
 
 const yellow = {
   background: "#f0c53e",
@@ -66,9 +67,11 @@ function App() {
         <Promotionaltour theme={theme} />
         <Globallyaccepted theme={theme} />
         <Watchtour theme={theme} />
+        {/* potential problem here */}
         <Ourteam theme={theme} />
         <Whychooseus />
         <Customersay />
+        <Latestnews />
       </themeContext.Provider>
     </div>
   );

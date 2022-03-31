@@ -15,8 +15,16 @@ import PinkArrow from "./Pinkarrow.svg";
 import Stars from "./Stars.svg";
 import SmilingWoman from "./Smilingwoman.png";
 import Switch from "./Imageswitch.svg";
+import LadyCamera from "./LadyCamera.png";
+import Phone from "./Phonepng.png";
+import UmbrellaTree from "./UmbrellaTree.png";
+import Burj from "./BurjKhalifa.png";
 
 export default {
+  Phone,
+  LadyCamera,
+  UmbrellaTree,
+  Burj,
   Switch,
   Stars,
   SmilingWoman,

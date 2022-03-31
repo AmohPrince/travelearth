@@ -1,7 +1,6 @@
 import React from "react";
 import Colouredtab from "../Colouredtab/Colouredtab";
 import Logo from "../Logo/Logo";
-// import images from "../../assets/assets";
 import "./Topbar.css";
 import assets from "../../assets/assets";
 

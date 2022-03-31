@@ -8,7 +8,7 @@ const Reasons = ({ reasonsObject }) => {
   return (
     <div className="Reasons__container flex__container-v">
       <img src={reasonsObject.icon} alt="Icon" />
-      <div className="Reasons__title">
+      <div className="Sub__container-mid Reasons__title">
         <Subtitle theme={theme} textGroup={reasonsObject.textGroup} />
       </div>
       <div className="Reasons__text">

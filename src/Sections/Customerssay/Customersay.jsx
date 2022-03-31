@@ -18,7 +18,9 @@ const Customersay = () => {
           <div />
           <p className="p__nunito">Testimonial</p>
         </div>
-        <Subtitle theme={theme} textGroup={textGroup} />
+        <div className="Sub__container-Head">
+          <Subtitle theme={theme} textGroup={textGroup} />
+        </div>
         <div className="Customersay__right-ptags">
           <p className="p__poppins">
             Lorem Ipsum is simply dummy text of the printing and typesetting

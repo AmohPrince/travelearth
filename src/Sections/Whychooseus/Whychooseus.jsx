@@ -38,7 +38,9 @@ const Whychooseus = () => {
   const theme = useContext(themeContext);
   return (
     <div className="Whychooseus__container flex__container-v">
-      <Subtitle textGroup={textGroup} theme={theme} />
+      <div className="Sub__container-Head">
+        <Subtitle theme={theme} textGroup={textGroup} />
+      </div>
       <p className="p__poppins">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

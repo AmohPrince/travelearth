@@ -25,7 +25,9 @@ const Globallyaccepted = () => {
   const theme = useContext(themeContext);
   return (
     <div className="Globallyaccepted__container flex__container-v">
-      <Subtitle theme={theme} textGroup={textGroup} />
+      <div className="Sub__container-Head">
+        <Subtitle theme={theme} textGroup={textGroup} />
+      </div>
       <div className="Globallyaccepted__text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam iure
         illum aliquid soluta totam optio, nam dolorem, autem itaque eos fugit,

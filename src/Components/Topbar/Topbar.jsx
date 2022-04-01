@@ -5,6 +5,7 @@ import "./Topbar.css";
 import assets from "../../assets/assets";
 
 const Topbar = ({ theme }) => {
+  const location = "head";
   return (
     <>
       <div
@@ -12,7 +13,7 @@ const Topbar = ({ theme }) => {
         className="App__topbar"
       >
         <div className="App__navbar flex__container">
-          <Logo theme={theme} />
+          <Logo theme={theme} location={location} />
           <div className="Navbar__links">
             <ul className="Navbar__list flex__container p__poppins">
               <li style={{ color: theme.linksColor }}>Home</li>

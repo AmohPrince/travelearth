@@ -8,11 +8,12 @@ import Ourteam from "./Sections/Ourteam/Ourteam";
 import Whychooseus from "./Sections/Whychooseus/Whychooseus";
 import Customersay from "./Sections/Customerssay/Customersay";
 import Latestnews from "./Sections/Latestnews/Latestnews";
+import Footer from "./Sections/Footer/Footer";
 
 const yellow = {
   background: "#f0c53e",
   primarytextcolour: "#000",
-  secondarytextcolour: "7f2736",
+  secondarytextcolour: "#7f2736",
   logoTextColour: "#ffffff",
   logoBackground: "#000000",
   linksColor: "#252641",
@@ -72,6 +73,7 @@ function App() {
         <Whychooseus />
         <Customersay />
         <Latestnews />
+        <Footer />
       </themeContext.Provider>
     </div>
   );

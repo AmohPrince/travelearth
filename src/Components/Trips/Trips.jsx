@@ -3,9 +3,8 @@ import "./Trips.css";
 
 //category is an object containg the trip type and the background img
 const Trips = ({ theme, category }) => {
-  const tripImage = document.querySelector(".Trips__container");
+  // const tripImage = document.querySelector(".Trips__container");
 
-  console.log(tripImage);
   return (
     <div
       className="Trips__container flex__container-v"

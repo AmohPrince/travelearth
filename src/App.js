@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Topbar from "./Components/Topbar/Topbar";
 import Promotionaltour from "./Sections/Promotionaltour/Promotionaltour";
 import Globallyaccepted from "./Sections/Globallyaccepted/Globallyaccepted";
@@ -58,8 +58,27 @@ const brown = {
 };
 
 export const themeContext = React.createContext();
+
 function App() {
   const [theme, setTheme] = useState(yellow);
+
+  useEffect(() => {
+    changeTheme();
+  }, []);
+
+  const changeTheme = () => {
+    setTimeout(() => {
+      setTheme((prevTheme) => {
+        if (prevTheme === dark) {
+          return yellow;
+        } else {
+          return prevTheme === yellow ? brown : dark;
+        }
+      });
+      changeTheme();
+      console.log("Changed theme");
+    }, 300000);
+  };
 
   return (
     <div className="App">

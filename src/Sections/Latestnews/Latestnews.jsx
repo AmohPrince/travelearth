@@ -81,7 +81,9 @@ export const Yellownews = ({ text }) => {
       className="Yellonews__container"
       style={{ backgroundColor: theme.background }}
     >
-      <p className="p__poppins">{text}</p>
+      <p className="p__poppins" style={{ color: theme.primarytextcolour }}>
+        {text}
+      </p>
     </div>
   );
 };

@@ -9,7 +9,9 @@ const Topbar = ({ theme }) => {
   return (
     <>
       <div
-        style={{ backgroundColor: theme.background }}
+        style={{
+          backgroundColor: theme.background,
+        }}
         className="App__topbar"
       >
         <div className="App__navbar flex__container">
@@ -316,7 +318,9 @@ const Topbar = ({ theme }) => {
       </div>
       <div
         className="App__topbar__curve"
-        style={{ backgroundColor: theme.background }}
+        style={{
+          backgroundColor: theme.background,
+        }}
       ></div>
     </>
   );

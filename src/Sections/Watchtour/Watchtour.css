@@ -55,6 +55,11 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1150px) {
+  .Square__bottomleft {
+    right: 10%;
+  }
+}
 @media screen and (max-width: 650px) {
   .Watchtour__container {
     flex-direction: column;

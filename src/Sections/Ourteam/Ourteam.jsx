@@ -94,7 +94,7 @@ const Ourteam = ({ theme }) => {
               <circle cx="70" cy="70" r="70" fill="#EE5060" />
             </svg>
           </div>
-          <div>
+          <div className="Ourteam__body-imgcontainer">
             <img
               src={images.people}
               alt="People"

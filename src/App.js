@@ -87,7 +87,6 @@ function App() {
         <Promotionaltour theme={theme} />
         <Globallyaccepted theme={theme} />
         <Watchtour theme={theme} />
-        {/* potential problem here */}
         <Ourteam theme={theme} />
         <Whychooseus />
         <Customersay />

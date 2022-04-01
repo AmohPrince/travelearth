@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/travelearth/static/css/main.a4dc55b6.css",
-    "main.js": "/travelearth/static/js/main.b7944146.js",
+    "main.css": "/travelearth/static/css/main.703604b7.css",
+    "main.js": "/travelearth/static/js/main.74433176.js",
     "static/media/zipline.mp4": "/travelearth/static/media/zipline.562146657093dec22968.mp4",
     "static/media/BurjKhalifa.png": "/travelearth/static/media/BurjKhalifa.5309a0be27343e98a098.png",
     "static/media/Turkey.png": "/travelearth/static/media/Turkey.958b96398ea020c67a64.png",
@@ -24,11 +24,11 @@
     "static/media/Imageswitch.svg": "/travelearth/static/media/Imageswitch.3ad050e38a6d69cef7901f5b687c5a14.svg",
     "index.html": "/travelearth/index.html",
     "static/media/Pinkarrow.svg": "/travelearth/static/media/Pinkarrow.ff3ab55a51788782f07d2c540bd92eb9.svg",
-    "main.a4dc55b6.css.map": "/travelearth/static/css/main.a4dc55b6.css.map",
-    "main.b7944146.js.map": "/travelearth/static/js/main.b7944146.js.map"
+    "main.703604b7.css.map": "/travelearth/static/css/main.703604b7.css.map",
+    "main.74433176.js.map": "/travelearth/static/js/main.74433176.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4dc55b6.css",
-    "static/js/main.b7944146.js"
+    "static/css/main.703604b7.css",
+    "static/js/main.74433176.js"
   ]
 }

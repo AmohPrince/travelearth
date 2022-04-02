@@ -51,7 +51,6 @@
 .Teamsection__container {
   align-items: unset;
   margin: 50px 0px;
-  border: 1px solid red;
 }
 .Teamsection__container > .p__poppins {
   font-size: 1.4rem;

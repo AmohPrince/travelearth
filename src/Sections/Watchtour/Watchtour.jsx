@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Watchtour.css";
 import images from "../../assets/assets";
 import Subtitle from "../../Components/Subtitle/Subtitle";
+import { MdOutlinePlayCircle, MdPause } from "react-icons/md";
 
 const textGroup = {
   text1: "Watch,",
   text2: "our lattest tour",
 };
 const Watchtour = ({ theme }) => {
+  const [playVideo, setPlayVideo] = useState(false);
+
+  const vidRef = useRef();
+
+  const handleVideo = () => {
+    setPlayVideo((prevPlayVideo) => !prevPlayVideo);
+    if (playVideo) {
+      vidRef.current.pause();
+    } else {
+      vidRef.current.play();
+    }
+  };
   return (
     <div className="Watchtour__container flex__container">
       <div className="Watchtour__left flex__container-v">
@@ -73,60 +86,20 @@ const Watchtour = ({ theme }) => {
           </svg>
         </div>
         <div className="Watchtour__right-video">
-          <video src={images.flying} muted autoPlay loop></video>
-        </div>
-        <div className="Center__playbutton">
-          <svg
-            width="190"
-            height="190"
-            viewBox="0 0 190 190"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_d_0_1)">
-              <circle cx="93" cy="75" r="35" fill="white" />
-            </g>
-            <path
-              d="M105.575 74.7264C106.221 75.115 106.221 76.0517 105.575 76.4403L87.5154 87.3015C86.8489 87.7024 86 87.2223 86 86.4446L86 64.7221C86 63.9444 86.8489 63.4643 87.5154 63.8652L105.575 74.7264Z"
-              fill="#23BDEE"
-            />
-            <defs>
-              <filter
-                id="filter0_d_0_1"
-                x="0"
-                y="0"
-                width="190"
-                height="190"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dx="2" dy="20" />
-                <feGaussianBlur stdDeviation="30" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0.239854 0 0 0 0 0.607896 0 0 0 0 0.725 0 0 0 0.1 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_0_1"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_0_1"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
+          <video
+            src={images.flying}
+            loop
+            type="video/mp4"
+            controls={false}
+            ref={vidRef}
+          />
+          <div className="Center__playbutton" onClick={handleVideo}>
+            {playVideo ? (
+              <MdPause fontSize={60} color="#f0c53e" />
+            ) : (
+              <MdOutlinePlayCircle fontSize={60} color="#f0c53e" />
+            )}
+          </div>
         </div>
       </div>
     </div>

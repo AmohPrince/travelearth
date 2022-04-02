@@ -12,7 +12,7 @@ const Newstab = ({ news }) => {
   const theme = useContext(themeContext);
   return (
     <div className="Newstab__container flex__container">
-      <div className="Newstab__right">
+      <div className="Newstab__right ">
         <img src={news.image} alt="Image" />
         <div className="Newstab__right-yellow">
           <Yellownews text={news.text} />

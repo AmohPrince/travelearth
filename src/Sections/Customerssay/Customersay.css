@@ -48,6 +48,9 @@
   font-size: 1.4rem;
   font-weight: 400;
 }
+.Customersay__pinkbtn > div {
+  margin-top: 3px;
+}
 .Customersay__left {
   width: 50%;
   position: relative;
@@ -113,6 +116,9 @@
 }
 
 @media screen and (max-width: 1150px) {
+  .Customersay__pinkbtn {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 650px) {
   .Customersay__container {

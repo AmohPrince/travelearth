@@ -29,6 +29,7 @@ const Logo = ({ theme, location }) => {
       text.setAttribute("fill", theme.logoBackground);
     }
   };
+
   return (
     <div>
       <svg
@@ -37,6 +38,7 @@ const Logo = ({ theme, location }) => {
         viewBox="0 0 208 83"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="logoSvgContainer"
       >
         <path
           className="logosvg"

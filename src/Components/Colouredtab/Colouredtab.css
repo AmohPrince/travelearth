@@ -1,22 +1,23 @@
 .Colouredtab__container {
   border-radius: 80px;
-  height: 60px;
+  padding: 1em;
   width: 100%;
   cursor: pointer;
 }
 .Colouredtab__container > p {
   color: white;
+  text-align: center;
 }
 
 @media screen and (max-width: 1150px) {
   .Colouredtab__container {
     border-radius: 70px;
-    height: 60px;
   }
 }
 @media screen and (max-width: 650px) {
   .Colouredtab__container {
     border-radius: 60px;
-    height: 40px;
+    flex-direction: column;
+    padding: 0.8em;
   }
 }

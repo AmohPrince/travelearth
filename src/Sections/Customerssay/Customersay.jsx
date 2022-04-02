@@ -34,7 +34,9 @@ const Customersay = () => {
         </div>
         <div className="Customersay__pinkbtn flex__container">
           <p className="p__poppins">Write your thoughts</p>
-          <img src={images.PinkArrow} alt="Arrow" />
+          <div>
+            <img src={images.PinkArrow} alt="Arrow" />
+          </div>
         </div>
       </div>
       <div className="Customersay__left ">

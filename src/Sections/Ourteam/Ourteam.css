@@ -42,10 +42,11 @@
   width: 100%;
   height: 100%;
 }
-.Ourteam__body-left > .p__poppins {
-  display: inline;
-  font-size: 2.5rem;
+.Ourteam__body-left-2 > .p__poppins {
+  font-size: 1.5rem;
   font-weight: 700;
+  margin-right: 7px;
+  padding-bottom: 4px;
 }
 
 .Teamsection__container {

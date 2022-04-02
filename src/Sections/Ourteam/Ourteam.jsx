@@ -103,9 +103,11 @@ const Ourteam = ({ theme }) => {
           </div>
         </div>
         <div className="Ourteam__body-left">
-          {/* <p className="p__poppins">Our</p> */}
-          <div className="Sub__container-mid">
-            <Subtitle theme={theme} textGroup={textGroup2} />
+          <div className="flex__container Ourteam__body-left-2">
+            <p className="p__poppins">Our</p>
+            <div className="Sub__container-mid">
+              <Subtitle theme={theme} textGroup={textGroup2} />
+            </div>
           </div>
           <Teamsection icon={icons.icon1} />
           <Teamsection icon={icons.icon2} />

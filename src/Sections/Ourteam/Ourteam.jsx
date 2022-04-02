@@ -46,7 +46,7 @@ const Ourteam = ({ theme }) => {
         </p>
       </div>
       <div className="Ourteam__body flex__container">
-        <div className="Ourteam__body-right">
+        <div className="Ourteam__body-right flex__container">
           <div className="Ourteam__circles-brown">
             <svg
               width="140"

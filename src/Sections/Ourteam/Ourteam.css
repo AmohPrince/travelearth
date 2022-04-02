@@ -34,6 +34,7 @@
   left: 40%;
   top: -20%;
 }
+
 .Ourteam__body-imgcontainer {
   width: 100%;
 }
@@ -50,6 +51,7 @@
 .Teamsection__container {
   align-items: unset;
   margin: 50px 0px;
+  border: 1px solid red;
 }
 .Teamsection__container > .p__poppins {
   font-size: 1.4rem;
@@ -88,6 +90,10 @@
   .Ourteam__circles-yellow {
     right: 20%;
   }
+  .Ourteam__circles-brown2 {
+    right: 65%;
+    bottom: -30%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -96,5 +102,13 @@
   }
   .Ourteam__body-imgcontainer {
     width: 300px;
+  }
+  .Ourteam__circles-brown2 {
+    right: 20%;
+    bottom: -25%;
+  }
+  .Ourteam__circles-grey {
+    left: 10%;
+    top: -30%;
   }
 }

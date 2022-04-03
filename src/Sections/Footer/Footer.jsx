@@ -12,7 +12,7 @@ const Footer = () => {
       style={{ backgroundColor: theme.secondarytextcolour }}
     >
       <div className="Footer__first flex__container">
-        <Logo theme={theme} location={location} />
+        <Logo theme={theme} />
         <p className="p__poppins">Domestic International Tours</p>
       </div>
       <div className="Footer__second">

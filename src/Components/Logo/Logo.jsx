@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Logo = ({ theme, location }) => {
+const Logo = ({ theme }) => {
   useEffect(() => {
     const logosvg = document.querySelectorAll(".logosvg");
     const text = document.querySelector(".text");
@@ -10,25 +10,14 @@ const Logo = ({ theme, location }) => {
     text.setAttribute("fill", theme.logoTextColour);
   }, []);
 
-  // useEffect(() => {
-  //   handleLocationChange(location);
-  // }, [location]);
-
-  const handleLocationChange = (location) => {
+  useEffect(() => {
     const logosvg = document.querySelectorAll(".logosvg");
     const text = document.querySelector(".text");
-    if (location === "head") {
-      logosvg.forEach((path) => {
-        path.setAttribute("fill", theme.logoBackground);
-      });
-      text.setAttribute("fill", theme.logoTextColour);
-    } else if (location === "footer") {
-      logosvg.forEach((path) => {
-        path.setAttribute("fill", theme.background);
-      });
-      text.setAttribute("fill", theme.logoBackground);
-    }
-  };
+    logosvg.forEach((path) => {
+      path.setAttribute("fill", theme.logoBackground);
+    });
+    text.setAttribute("fill", theme.logoTextColour);
+  }, [theme]);
 
   return (
     <div>

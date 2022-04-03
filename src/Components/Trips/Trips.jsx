@@ -9,12 +9,15 @@ const Trips = ({ theme, category }) => {
     <div
       className="Trips__container flex__container-v"
       style={{
-        backgroundColor: theme.tripsColor,
-        opacity: 0.8,
-        zIndex: 2,
+        backgroundImage: `url(${category.bgImage})`,
       }}
     >
-      <div className="Trips__absolute">
+      <div
+        className="Trips__absolute flex__container-v"
+        style={{
+          backgroundColor: theme.tripsColor,
+        }}
+      >
         <div className="Trips__text">
           <p className="p__poppins">{category.type}</p>
         </div>
